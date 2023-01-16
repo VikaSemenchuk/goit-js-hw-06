@@ -16,7 +16,7 @@ const images = [
 const galleryEl = document.querySelector(".gallery");
 
 const imageEl = images
-  .map((image) => `<li><img alt="${image.alt}" src="${image.url}" width='100%' height ='100%'></li>`)
+  .map((image) => `<li><img alt="${image.alt}" src="${image.url}" width='100%' height ='100%' style="border-radius: 10px"></li>`)
   .join("");
 galleryEl.insertAdjacentHTML("beforeend", imageEl);
 console.log(galleryEl);
@@ -24,3 +24,6 @@ console.log(galleryEl);
 galleryEl.style.display = 'flex';
 galleryEl.style.gap = '10px';
 galleryEl.style.listStyle = 'none';
+galleryEl.style.paddingLeft = '0px';
+
+
